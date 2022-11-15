@@ -67,7 +67,7 @@
 		AB8D9DE3292404E5001429EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AB8D9DE529240548001429EF /* ProjectOOP_V2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProjectOOP_V2.entitlements; sourceTree = "<group>"; };
 		AB8D9DE729241017001429EF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		AB8D9DE929243AD7001429EF /* AnimatedLoginPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatedLoginPage.swift; path = "ProjectOOP_V2(backup)/AnimatedLoginPage.swift"; sourceTree = SOURCE_ROOT; };
+		AB8D9DE929243AD7001429EF /* AnimatedLoginPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedLoginPage.swift; sourceTree = "<group>"; };
 		C88AE7F5B2DCEFC942CC2B37 /* Pods_ProjectOOP_V2_ProjectOOP_V2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectOOP_V2_ProjectOOP_V2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB16FBE986250F5999A10E6 /* Pods-ProjectOOP_V2-ProjectOOP_V2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectOOP_V2-ProjectOOP_V2UITests.debug.xcconfig"; path = "Target Support Files/Pods-ProjectOOP_V2-ProjectOOP_V2UITests/Pods-ProjectOOP_V2-ProjectOOP_V2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
