@@ -167,7 +167,7 @@ struct LoginPageUI : View {
                                 
                                 switch result {
                                 case .success(let user):
-                                    print("Success")
+                                    print("Success") //add new screen
                                     guard let credential = user.credential as?
                                             ASAuthorizationAppleIDCredential else{
                                         print("error with firebase")
@@ -202,6 +202,8 @@ struct LoginPageUI : View {
 //                                    .background(Color("apple"))
 //                                    .clipShape(Capsule())
 //                            })
+                            
+                            
                             
                             // MARK: Native Google Sign in button
                             if let clientID = FirebaseApp.app()?.options.clientID{

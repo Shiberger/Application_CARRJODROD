@@ -1,0 +1,85 @@
+//
+//  Home.swift
+//  ProjectOOP_V2
+//
+//  Created by Hannarong Kaewkiriya on 21/11/2565 BE.
+//
+
+import SwiftUI
+import Firebase
+import GoogleSignIn
+
+struct HomeView: View {
+    @AppStorage("log_status") var logStatus: Bool = false
+    // MARK: Hiding Native One
+    init(){
+        UITabBar.appearance().isHidden = true
+    }
+    @State var currentTab: Tab = .bookmark
+    
+    var body: some View {
+        if logStatus{
+            Home()
+        }else{
+            AnimatedLoginPage()
+        }
+        
+        VStack(spacing: 0){
+            TabView(selection: $currentTab){
+                // MARK: Need to Apply BG For Each Tab View
+                Text("Bookmark")
+                    .applyBG()
+                    .tag(Tab.bookmark)
+                Text("Time")
+                    .applyBG()
+                    .tag(Tab.time)
+                Text("Camera")
+                    .applyBG()
+                    .tag(Tab.camera)
+                Text("Chat")
+                    .applyBG()
+                    .tag(Tab.chat)
+                Text("Settings")
+                    .applyBG()
+                    .tag(Tab.settings)
+            }
+            // MARK: Custom Tab Bar
+            CustomTabBar(currentTab: $currentTab)
+        }
+    }
+    
+    @ViewBuilder
+    func Home() -> some View{
+        NavigationStack{
+            Text("Logged In")
+                .navigationTitle("CARRJODROD")
+                .toolbar {
+                    Button("Logout"){
+                        try? Auth.auth().signOut()
+                        GIDSignIn.sharedInstance.signOut()
+                        withAnimation(.easeInOut){
+                            logStatus = false
+                        }
+                    }
+                }
+            
+        }
+    }
+}
+
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
+    }
+}
+
+extension View{
+    func applyBG()->some View{
+        self
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background{
+                Color("BG")
+                    .ignoresSafeArea()
+            }
+    }
+}

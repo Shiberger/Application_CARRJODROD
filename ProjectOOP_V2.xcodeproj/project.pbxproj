@@ -18,6 +18,11 @@
 		AB29C6812923DA3500F1802C /* ProjectOOP_V2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB29C6802923DA3500F1802C /* ProjectOOP_V2Tests.swift */; };
 		AB29C68B2923DA3500F1802C /* ProjectOOP_V2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB29C68A2923DA3500F1802C /* ProjectOOP_V2UITests.swift */; };
 		AB29C68D2923DA3500F1802C /* ProjectOOP_V2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB29C68C2923DA3500F1802C /* ProjectOOP_V2UITestsLaunchTests.swift */; };
+		AB8CDDA1292AEB74003DEECE /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CDDA0292AEB74003DEECE /* SearchView.swift */; };
+		AB8CDDA3292AECD7003DEECE /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CDDA2292AECD7003DEECE /* LocationManager.swift */; };
+		AB8CDDA5292B021E003DEECE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CDDA4292B021E003DEECE /* HomeView.swift */; };
+		AB8CDDA7292B0E76003DEECE /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CDDA6292B0E76003DEECE /* CustomTabBar.swift */; };
+		AB8CDDA9292B0E8F003DEECE /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CDDA8292B0E8F003DEECE /* Tab.swift */; };
 		AB8D9DCF2923F4C8001429EF /* CARCITY_ORANGE.json in Resources */ = {isa = PBXBuildFile; fileRef = AB8D9DCE2923F4C8001429EF /* CARCITY_ORANGE.json */; };
 		AB8D9DD8292401E7001429EF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AB8D9DD7292401E7001429EF /* FirebaseAuth */; };
 		AB8D9DDB29240232001429EF /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = AB8D9DDA29240232001429EF /* GoogleSignIn */; };
@@ -62,6 +67,11 @@
 		AB29C6862923DA3500F1802C /* ProjectOOP_V2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectOOP_V2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB29C68A2923DA3500F1802C /* ProjectOOP_V2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectOOP_V2UITests.swift; sourceTree = "<group>"; };
 		AB29C68C2923DA3500F1802C /* ProjectOOP_V2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectOOP_V2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB8CDDA0292AEB74003DEECE /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		AB8CDDA2292AECD7003DEECE /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		AB8CDDA4292B021E003DEECE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AB8CDDA6292B0E76003DEECE /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		AB8CDDA8292B0E8F003DEECE /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		AB8D9DCE2923F4C8001429EF /* CARCITY_ORANGE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CARCITY_ORANGE.json; sourceTree = "<group>"; };
 		AB8D9DE229240441001429EF /* ProjectOOP-V2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ProjectOOP-V2-Info.plist"; sourceTree = SOURCE_ROOT; };
 		AB8D9DE3292404E5001429EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -151,6 +161,7 @@
 				AB8D9DE529240548001429EF /* ProjectOOP_V2.entitlements */,
 				AB8D9DE229240441001429EF /* ProjectOOP-V2-Info.plist */,
 				AB8D9DE629240FFE001429EF /* ViewModel */,
+				AB8CDD9F292AEB35003DEECE /* View */,
 				AB29C6992923DBDD00F1802C /* LoginPageUI */,
 				AB29C66F2923DA3400F1802C /* ProjectOOP_V2App.swift */,
 				AB29C6712923DA3400F1802C /* ContentView.swift */,
@@ -194,10 +205,22 @@
 			path = LoginPageUI;
 			sourceTree = "<group>";
 		};
+		AB8CDD9F292AEB35003DEECE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB8CDDA4292B021E003DEECE /* HomeView.swift */,
+				AB8CDDA0292AEB74003DEECE /* SearchView.swift */,
+				AB8CDDA6292B0E76003DEECE /* CustomTabBar.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		AB8D9DE629240FFE001429EF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				AB8D9DE729241017001429EF /* LoginViewModel.swift */,
+				AB8CDDA2292AECD7003DEECE /* LocationManager.swift */,
+				AB8CDDA8292B0E8F003DEECE /* Tab.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -466,10 +489,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8CDDA1292AEB74003DEECE /* SearchView.swift in Sources */,
 				AB8D9DEA29243AD7001429EF /* AnimatedLoginPage.swift in Sources */,
+				AB8CDDA3292AECD7003DEECE /* LocationManager.swift in Sources */,
 				AB29C6722923DA3400F1802C /* ContentView.swift in Sources */,
+				AB8CDDA7292B0E76003DEECE /* CustomTabBar.swift in Sources */,
 				AB8D9DE829241017001429EF /* LoginViewModel.swift in Sources */,
+				AB8CDDA9292B0E8F003DEECE /* Tab.swift in Sources */,
 				AB29C6702923DA3400F1802C /* ProjectOOP_V2App.swift in Sources */,
+				AB8CDDA5292B021E003DEECE /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,9 +662,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ProjectOOP-V2-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -666,9 +694,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ProjectOOP-V2-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
