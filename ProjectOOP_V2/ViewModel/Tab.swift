@@ -9,9 +9,9 @@ import SwiftUI
 
 // MARK: Enum for Tabs with Rawvalue as Asset Image
 enum Tab: String, CaseIterable{
-    case bookmark = "Bookmark"
+    case home = "Home"
     case time = "Time"
     case camera = "Camera"
-    case chat = "Chat"
+    case map = "Map"
     case settings = "Settings"
 }

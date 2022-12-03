@@ -64,13 +64,13 @@ struct CustomTabBar: View {
     
     func getIndex()->Int{
         switch currentTab {
-        case .bookmark:
+        case .home:
             return 0
         case .time:
             return 1
         case .camera:
             return 2
-        case .chat:
+        case .map:
             return 3
         case .settings:
             return 4
@@ -81,5 +81,6 @@ struct CustomTabBar: View {
 struct CustomTabBar_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        
     }
 }

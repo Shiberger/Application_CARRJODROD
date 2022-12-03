@@ -25,6 +25,10 @@ class LocationManager: NSObject,ObservableObject,MKMapViewDelegate,CLLocationMan
     // MARK: User Location
     @Published var userLocation: CLLocation?
     
+    // MARK: Final Location
+    @Published var pickedLocation: CLLocation?
+    @Published var pickedPlaceMark: CLPlacemark?
+    
     override init() {
         super.init()
         // MARK: Setting Delegates
@@ -90,6 +94,50 @@ class LocationManager: NSObject,ObservableObject,MKMapViewDelegate,CLLocationMan
     
     func handleLocationError(){
         // HANDLE ERROR
+    }
+    
+    // MARK: Add Draggble Pin to MapView
+    func addDraggablePin(coordinate: CLLocationCoordinate2D){
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = coordinate
+        annotation.title = "CAR PARK is here"
+        
+        mapView.addAnnotation(annotation)
+    }
+    
+    // MARK: Enabling Draggin
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let marker = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: "CARPARKPIN")
+        marker.isDraggable = true
+        marker.canShowCallout = false
+        
+        return marker
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationView.DragState, fromOldState oldState: MKAnnotationView.DragState) {
+        guard let newLocation = view.annotation?.coordinate else{return}
+        self.pickedLocation = .init(latitude: newLocation.latitude, longitude: newLocation.longitude)
+        updatePlaceMark(location: .init(latitude: newLocation.latitude, longitude: newLocation.longitude))
+    }
+    
+    func updatePlaceMark(location: CLLocation){
+        Task{
+            do{
+                guard let place = try await reverseLocationCoordinates(location: location) else {return}
+                await MainActor.run(body: {
+                    self.pickedPlaceMark = place
+                })
+            }
+            catch{
+                // HANDLE ERROR
+            }
+        }
+    }
+    
+    // MARK: Displaying New Location Data
+    func reverseLocationCoordinates(location: CLLocation) async throws -> CLPlacemark?{
+        let place = try await CLGeocoder().reverseGeocodeLocation(location).first
+        return place
     }
 }
 

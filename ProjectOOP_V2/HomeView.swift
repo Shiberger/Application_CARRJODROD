@@ -15,30 +15,31 @@ struct HomeView: View {
     init(){
         UITabBar.appearance().isHidden = true
     }
-    @State var currentTab: Tab = .bookmark
+    @State var currentTab: Tab = .home
     
     var body: some View {
-        if logStatus{
-            Home()
-        }else{
-            AnimatedLoginPage()
-        }
+        
+//        if logStatus{
+//            Home()
+//        }else{
+//            AnimatedLoginPage()
+//        }
         
         VStack(spacing: 0){
             TabView(selection: $currentTab){
                 // MARK: Need to Apply BG For Each Tab View
-                Text("Bookmark")
+                Text("Home")
                     .applyBG()
-                    .tag(Tab.bookmark)
+                    .tag(Tab.home)
                 Text("Time")
                     .applyBG()
                     .tag(Tab.time)
                 Text("Camera")
                     .applyBG()
                     .tag(Tab.camera)
-                Text("Chat")
+                SearchView()
                     .applyBG()
-                    .tag(Tab.chat)
+                    .tag(Tab.map)
                 Text("Settings")
                     .applyBG()
                     .tag(Tab.settings)
@@ -48,23 +49,23 @@ struct HomeView: View {
         }
     }
     
-    @ViewBuilder
-    func Home() -> some View{
-        NavigationStack{
-            Text("Logged In")
-                .navigationTitle("CARRJODROD")
-                .toolbar {
-                    Button("Logout"){
-                        try? Auth.auth().signOut()
-                        GIDSignIn.sharedInstance.signOut()
-                        withAnimation(.easeInOut){
-                            logStatus = false
-                        }
-                    }
-                }
-            
-        }
-    }
+//    @ViewBuilder
+//    func Home() -> some View{
+//        NavigationStack{
+//            Text("Logged In")
+//                .navigationTitle("CARRJODROD")
+//                .toolbar {
+//                    Button("Logout"){
+//                        try? Auth.auth().signOut()
+//                        GIDSignIn.sharedInstance.signOut()
+//                        withAnimation(.easeInOut){
+//                            logStatus = false
+//                        }
+//                    }
+//                }
+//            
+//        }
+//    }
 }
 
 struct HomeView_Previews: PreviewProvider {
