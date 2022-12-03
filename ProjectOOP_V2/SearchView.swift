@@ -79,20 +79,20 @@ struct SearchView: View {
                             }
                         }
 
-//                        HStack(spacing: 15){
-//                            Image(systemName: "mappin.circle.fill")
-//                                .font(.title2)
-//                                .foregroundColor(.gray)
-//
-//                            VStack(alignment: .leading, spacing: 6) {
-//                                Text(place.name ?? "")
-//                                    .font(.title3.bold())
-//
-//                                Text(place.locality ?? "")
-//                                    .font(.caption)
-//                                    .foregroundColor(.gray)
-//                            }
-//                        }
+                        HStack(spacing: 15){
+                            Image(systemName: "mappin.circle.fill")
+                                .font(.title2)
+                                .foregroundColor(.gray)
+
+                            VStack(alignment: .leading, spacing: 6) {
+                                Text(place.name ?? "")
+                                    .font(.title3.bold())
+
+                                Text(place.locality ?? "")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                            }
+                        }
                     }
                 }
                 .listStyle(.plain)
@@ -109,7 +109,6 @@ struct SearchView: View {
                         // MARK: Navigating To MapView
                         navigationTag = "MAPVIEW"
                     }
-                    
                 } label: {
                     Label {
                         Text("Use Current Location")
@@ -125,14 +124,25 @@ struct SearchView: View {
         .padding()
         .frame(maxHeight: .infinity, alignment: .top)
         .background{
-            
-            NavigationLink(tag: "MAPVIEW", selection: $navigationTag) {
-                MapViewSelection()
-                    .environmentObject(locationManager)
-                    .navigationBarHidden(true)
-            } label: {}
-                .labelsHidden()
+            NavigationStack {
+                List {
+                    NavigationLink(tag: "MAPVIEW", selection: $navigationTag) {
+                        MapViewSelection()
+                            .environmentObject(locationManager)
+                            .navigationBarHidden(true)
+                    } label: {}
+                        .labelsHidden()
+                }
+            }
         }
+//            NavigationLink(tag: "MAPVIEW", selection: $navigationTag) {
+//                MapViewSelection()
+//                    .environmentObject(locationManager)
+//                    .navigationBarHidden(true)
+//            } label: {}
+//                .labelsHidden()
+//        }
+            
     }
     
 //    @ViewBuilder
@@ -178,8 +188,8 @@ struct MapViewSelection: View{
                     .font(.title2.bold())
                     .foregroundColor(.primary)
             }
+            .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .topLeading)
-
             
             // MARK: Displaying Data
             if let place = locationManager.pickedPlaceMark{

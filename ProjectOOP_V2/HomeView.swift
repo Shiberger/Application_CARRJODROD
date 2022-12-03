@@ -40,7 +40,7 @@ struct HomeView: View {
                 SearchView()
                     .applyBG()
                     .tag(Tab.map)
-                Text("Settings")
+                SettingView()
                     .applyBG()
                     .tag(Tab.settings)
             }
@@ -63,7 +63,7 @@ struct HomeView: View {
 //                        }
 //                    }
 //                }
-//            
+//
 //        }
 //    }
 }
@@ -79,7 +79,7 @@ extension View{
         self
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background{
-                Color("BG")
+                Color("black")
                     .ignoresSafeArea()
             }
     }

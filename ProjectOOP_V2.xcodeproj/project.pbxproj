@@ -30,6 +30,7 @@
 		AB8D9DE4292404E5001429EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB8D9DE3292404E5001429EF /* GoogleService-Info.plist */; };
 		AB8D9DE829241017001429EF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D9DE729241017001429EF /* LoginViewModel.swift */; };
 		AB8D9DEA29243AD7001429EF /* AnimatedLoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D9DE929243AD7001429EF /* AnimatedLoginPage.swift */; };
+		ABFB4FB2293B68D500C25E34 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB4FB1293B68D500C25E34 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		AB8D9DE529240548001429EF /* ProjectOOP_V2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProjectOOP_V2.entitlements; sourceTree = "<group>"; };
 		AB8D9DE729241017001429EF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		AB8D9DE929243AD7001429EF /* AnimatedLoginPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedLoginPage.swift; sourceTree = "<group>"; };
+		ABFB4FB1293B68D500C25E34 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		C88AE7F5B2DCEFC942CC2B37 /* Pods_ProjectOOP_V2_ProjectOOP_V2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectOOP_V2_ProjectOOP_V2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB16FBE986250F5999A10E6 /* Pods-ProjectOOP_V2-ProjectOOP_V2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectOOP_V2-ProjectOOP_V2UITests.debug.xcconfig"; path = "Target Support Files/Pods-ProjectOOP_V2-ProjectOOP_V2UITests/Pods-ProjectOOP_V2-ProjectOOP_V2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,6 +213,7 @@
 				AB8CDDA4292B021E003DEECE /* HomeView.swift */,
 				AB8CDDA0292AEB74003DEECE /* SearchView.swift */,
 				AB8CDDA6292B0E76003DEECE /* CustomTabBar.swift */,
+				ABFB4FB1293B68D500C25E34 /* SettingView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB8CDDA1292AEB74003DEECE /* SearchView.swift in Sources */,
+				ABFB4FB2293B68D500C25E34 /* SettingView.swift in Sources */,
 				AB8D9DEA29243AD7001429EF /* AnimatedLoginPage.swift in Sources */,
 				AB8CDDA3292AECD7003DEECE /* LocationManager.swift in Sources */,
 				AB29C6722923DA3400F1802C /* ContentView.swift in Sources */,
@@ -655,6 +659,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ProjectOOP_V2/ProjectOOP_V2.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectOOP_V2/Preview Content\"";
@@ -688,6 +693,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ProjectOOP_V2/ProjectOOP_V2.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectOOP_V2/Preview Content\"";
