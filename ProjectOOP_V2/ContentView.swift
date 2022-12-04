@@ -10,16 +10,17 @@ import Firebase
 import GoogleSignIn
 
 struct ContentView: View {
+    @EnvironmentObject var pomodoroModel: PomodoroModel
     @AppStorage("log_status") var logStatus: Bool = false
     // MARK: Hiding Native One
 //    init(){
 //        UITabBar.appearance().isHidden = true
 //    }
 //    @State var currentTab: Tab = .bookmark
-    
     var body: some View {
         if logStatus{
             HomeView()
+                .environmentObject(pomodoroModel)
         }else{
             AnimatedLoginPage()
         }

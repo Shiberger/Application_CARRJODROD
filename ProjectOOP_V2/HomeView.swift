@@ -31,7 +31,7 @@ struct HomeView: View {
                 Text("Home")
                     .applyBG()
                     .tag(Tab.home)
-                Text("Time")
+                HomeTimer()
                     .applyBG()
                     .tag(Tab.time)
                 Text("Camera")

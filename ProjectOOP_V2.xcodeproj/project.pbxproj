@@ -18,6 +18,7 @@
 		AB29C6812923DA3500F1802C /* ProjectOOP_V2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB29C6802923DA3500F1802C /* ProjectOOP_V2Tests.swift */; };
 		AB29C68B2923DA3500F1802C /* ProjectOOP_V2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB29C68A2923DA3500F1802C /* ProjectOOP_V2UITests.swift */; };
 		AB29C68D2923DA3500F1802C /* ProjectOOP_V2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB29C68C2923DA3500F1802C /* ProjectOOP_V2UITestsLaunchTests.swift */; };
+		AB894E7A293C8DF000957C2E /* NewTimerViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB894E79293C8DF000957C2E /* NewTimerViewTest.swift */; };
 		AB8CDDA1292AEB74003DEECE /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CDDA0292AEB74003DEECE /* SearchView.swift */; };
 		AB8CDDA3292AECD7003DEECE /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CDDA2292AECD7003DEECE /* LocationManager.swift */; };
 		AB8CDDA5292B021E003DEECE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CDDA4292B021E003DEECE /* HomeView.swift */; };
@@ -31,6 +32,8 @@
 		AB8D9DE829241017001429EF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D9DE729241017001429EF /* LoginViewModel.swift */; };
 		AB8D9DEA29243AD7001429EF /* AnimatedLoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D9DE929243AD7001429EF /* AnimatedLoginPage.swift */; };
 		ABFB4FB2293B68D500C25E34 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB4FB1293B68D500C25E34 /* SettingView.swift */; };
+		ABFB4FB4293C51CC00C25E34 /* PomodoroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB4FB3293C51CC00C25E34 /* PomodoroModel.swift */; };
+		ABFB4FB8293C52EC00C25E34 /* HomeTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB4FB7293C52EC00C25E34 /* HomeTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,7 @@
 		AB29C6862923DA3500F1802C /* ProjectOOP_V2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectOOP_V2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB29C68A2923DA3500F1802C /* ProjectOOP_V2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectOOP_V2UITests.swift; sourceTree = "<group>"; };
 		AB29C68C2923DA3500F1802C /* ProjectOOP_V2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectOOP_V2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB894E79293C8DF000957C2E /* NewTimerViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerViewTest.swift; sourceTree = "<group>"; };
 		AB8CDDA0292AEB74003DEECE /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		AB8CDDA2292AECD7003DEECE /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		AB8CDDA4292B021E003DEECE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		AB8D9DE729241017001429EF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		AB8D9DE929243AD7001429EF /* AnimatedLoginPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedLoginPage.swift; sourceTree = "<group>"; };
 		ABFB4FB1293B68D500C25E34 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		ABFB4FB3293C51CC00C25E34 /* PomodoroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroModel.swift; sourceTree = "<group>"; };
+		ABFB4FB7293C52EC00C25E34 /* HomeTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTimer.swift; sourceTree = "<group>"; };
 		C88AE7F5B2DCEFC942CC2B37 /* Pods_ProjectOOP_V2_ProjectOOP_V2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectOOP_V2_ProjectOOP_V2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB16FBE986250F5999A10E6 /* Pods-ProjectOOP_V2-ProjectOOP_V2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectOOP_V2-ProjectOOP_V2UITests.debug.xcconfig"; path = "Target Support Files/Pods-ProjectOOP_V2-ProjectOOP_V2UITests/Pods-ProjectOOP_V2-ProjectOOP_V2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +166,7 @@
 		AB29C66E2923DA3400F1802C /* ProjectOOP_V2 */ = {
 			isa = PBXGroup;
 			children = (
+				AB894E78293C8DE000957C2E /* TestGroup */,
 				AB8D9DE529240548001429EF /* ProjectOOP_V2.entitlements */,
 				AB8D9DE229240441001429EF /* ProjectOOP-V2-Info.plist */,
 				AB8D9DE629240FFE001429EF /* ViewModel */,
@@ -207,6 +214,14 @@
 			path = LoginPageUI;
 			sourceTree = "<group>";
 		};
+		AB894E78293C8DE000957C2E /* TestGroup */ = {
+			isa = PBXGroup;
+			children = (
+				AB894E79293C8DF000957C2E /* NewTimerViewTest.swift */,
+			);
+			path = TestGroup;
+			sourceTree = "<group>";
+		};
 		AB8CDD9F292AEB35003DEECE /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +229,7 @@
 				AB8CDDA0292AEB74003DEECE /* SearchView.swift */,
 				AB8CDDA6292B0E76003DEECE /* CustomTabBar.swift */,
 				ABFB4FB1293B68D500C25E34 /* SettingView.swift */,
+				ABFB4FB7293C52EC00C25E34 /* HomeTimer.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -224,6 +240,7 @@
 				AB8D9DE729241017001429EF /* LoginViewModel.swift */,
 				AB8CDDA2292AECD7003DEECE /* LocationManager.swift */,
 				AB8CDDA8292B0E8F003DEECE /* Tab.swift */,
+				ABFB4FB3293C51CC00C25E34 /* PomodoroModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -497,6 +514,9 @@
 				AB8D9DEA29243AD7001429EF /* AnimatedLoginPage.swift in Sources */,
 				AB8CDDA3292AECD7003DEECE /* LocationManager.swift in Sources */,
 				AB29C6722923DA3400F1802C /* ContentView.swift in Sources */,
+				ABFB4FB4293C51CC00C25E34 /* PomodoroModel.swift in Sources */,
+				ABFB4FB8293C52EC00C25E34 /* HomeTimer.swift in Sources */,
+				AB894E7A293C8DF000957C2E /* NewTimerViewTest.swift in Sources */,
 				AB8CDDA7292B0E76003DEECE /* CustomTabBar.swift in Sources */,
 				AB8D9DE829241017001429EF /* LoginViewModel.swift in Sources */,
 				AB8CDDA9292B0E8F003DEECE /* Tab.swift in Sources */,

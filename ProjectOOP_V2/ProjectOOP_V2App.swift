@@ -9,14 +9,20 @@ import SwiftUI
 import Firebase
 
 @main
+
 struct ProjectOOP_V2App: App {
+    // MARK: Since doing Background fetching Intializing
+    @StateObject var pomodoroModel: PomodoroModel = .init()
+    
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(pomodoroModel)
         }
     }
 }
+
 
 // MARK: Initializing Firebase
 class AppDelegate: NSObject, UIApplicationDelegate{
