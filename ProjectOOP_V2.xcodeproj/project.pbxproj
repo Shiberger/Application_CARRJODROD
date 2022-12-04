@@ -19,6 +19,9 @@
 		AB29C68B2923DA3500F1802C /* ProjectOOP_V2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB29C68A2923DA3500F1802C /* ProjectOOP_V2UITests.swift */; };
 		AB29C68D2923DA3500F1802C /* ProjectOOP_V2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB29C68C2923DA3500F1802C /* ProjectOOP_V2UITestsLaunchTests.swift */; };
 		AB894E7A293C8DF000957C2E /* NewTimerViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB894E79293C8DF000957C2E /* NewTimerViewTest.swift */; };
+		AB894E7E293CAC3600957C2E /* CustomCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB894E7D293CAC3600957C2E /* CustomCamera.swift */; };
+		AB894E80293CBDE600957C2E /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB894E7F293CBDE600957C2E /* CameraModel.swift */; };
+		AB894E84293CBEFF00957C2E /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB894E83293CBEFF00957C2E /* CameraView.swift */; };
 		AB8CDDA1292AEB74003DEECE /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CDDA0292AEB74003DEECE /* SearchView.swift */; };
 		AB8CDDA3292AECD7003DEECE /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CDDA2292AECD7003DEECE /* LocationManager.swift */; };
 		AB8CDDA5292B021E003DEECE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CDDA4292B021E003DEECE /* HomeView.swift */; };
@@ -72,6 +75,9 @@
 		AB29C68A2923DA3500F1802C /* ProjectOOP_V2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectOOP_V2UITests.swift; sourceTree = "<group>"; };
 		AB29C68C2923DA3500F1802C /* ProjectOOP_V2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectOOP_V2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AB894E79293C8DF000957C2E /* NewTimerViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerViewTest.swift; sourceTree = "<group>"; };
+		AB894E7D293CAC3600957C2E /* CustomCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCamera.swift; sourceTree = "<group>"; };
+		AB894E7F293CBDE600957C2E /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		AB894E83293CBEFF00957C2E /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		AB8CDDA0292AEB74003DEECE /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		AB8CDDA2292AECD7003DEECE /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		AB8CDDA4292B021E003DEECE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -230,6 +236,7 @@
 				AB8CDDA6292B0E76003DEECE /* CustomTabBar.swift */,
 				ABFB4FB1293B68D500C25E34 /* SettingView.swift */,
 				ABFB4FB7293C52EC00C25E34 /* HomeTimer.swift */,
+				AB894E7D293CAC3600957C2E /* CustomCamera.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -241,6 +248,8 @@
 				AB8CDDA2292AECD7003DEECE /* LocationManager.swift */,
 				AB8CDDA8292B0E8F003DEECE /* Tab.swift */,
 				ABFB4FB3293C51CC00C25E34 /* PomodoroModel.swift */,
+				AB894E7F293CBDE600957C2E /* CameraModel.swift */,
+				AB894E83293CBEFF00957C2E /* CameraView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -511,6 +520,7 @@
 			files = (
 				AB8CDDA1292AEB74003DEECE /* SearchView.swift in Sources */,
 				ABFB4FB2293B68D500C25E34 /* SettingView.swift in Sources */,
+				AB894E80293CBDE600957C2E /* CameraModel.swift in Sources */,
 				AB8D9DEA29243AD7001429EF /* AnimatedLoginPage.swift in Sources */,
 				AB8CDDA3292AECD7003DEECE /* LocationManager.swift in Sources */,
 				AB29C6722923DA3400F1802C /* ContentView.swift in Sources */,
@@ -518,10 +528,12 @@
 				ABFB4FB8293C52EC00C25E34 /* HomeTimer.swift in Sources */,
 				AB894E7A293C8DF000957C2E /* NewTimerViewTest.swift in Sources */,
 				AB8CDDA7292B0E76003DEECE /* CustomTabBar.swift in Sources */,
+				AB894E7E293CAC3600957C2E /* CustomCamera.swift in Sources */,
 				AB8D9DE829241017001429EF /* LoginViewModel.swift in Sources */,
 				AB8CDDA9292B0E8F003DEECE /* Tab.swift in Sources */,
 				AB29C6702923DA3400F1802C /* ProjectOOP_V2App.swift in Sources */,
 				AB8CDDA5292B021E003DEECE /* HomeView.swift in Sources */,
+				AB894E84293CBEFF00957C2E /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

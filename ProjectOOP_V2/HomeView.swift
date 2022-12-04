@@ -34,7 +34,7 @@ struct HomeView: View {
                 HomeTimer()
                     .applyBG()
                     .tag(Tab.time)
-                Text("Camera")
+                CustomCamera()
                     .applyBG()
                     .tag(Tab.camera)
                 SearchView()
