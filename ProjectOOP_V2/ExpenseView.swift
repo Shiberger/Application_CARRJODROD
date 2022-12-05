@@ -85,7 +85,7 @@ struct ExpenseView: View {
                             ForEach(months,id: \.self){month in
                                 Text(month)
                                     .font(.callout)
-                                    .foregroundColor(.white)
+                                    .foregroundColor(.gray)
                                     .padding(.vertical,8)
                                     .padding(.horizontal,15)
                                     .background{
