@@ -87,6 +87,7 @@ struct SearchView: View {
                             VStack(alignment: .leading, spacing: 6) {
                                 Text(place.name ?? "")
                                     .font(.title3.bold())
+                                    .foregroundColor(.primary)
 
                                 Text(place.locality ?? "")
                                     .font(.caption)
@@ -135,34 +136,9 @@ struct SearchView: View {
                 }
             }
         }
-//            NavigationLink(tag: "MAPVIEW", selection: $navigationTag) {
-//                MapViewSelection()
-//                    .environmentObject(locationManager)
-//                    .navigationBarHidden(true)
-//            } label: {}
-//                .labelsHidden()
-//        }
             
     }
     
-//    @ViewBuilder
-//    func DemoHome()->some View{
-//        NavigationStack{
-//            Text("Logged In")
-//                .navigationTitle("Map View")
-//                .toolbar {
-//                    ToolbarItem{
-//                        Button("Logout"){
-//                            try? Auth.auth().signOut()
-//                            GIDSignIn.sharedInstance.signOut()
-//                            withAnimation(.easeInOut){
-//                                logStatus = false
-//                            }
-//                        }
-//                    }
-//                }
-//        }
-//    }
 }
 
 struct SearchView_Previews: PreviewProvider {
@@ -196,6 +172,7 @@ struct MapViewSelection: View{
                 VStack(spacing: 15){
                     Text("Confirm Location")
                         .font(.title2.bold())
+                        .foregroundColor(.gray)
                     
                     HStack(spacing: 15){
                         Image(systemName: "mappin.circle.fill")
@@ -205,6 +182,7 @@ struct MapViewSelection: View{
                         VStack(alignment: .leading, spacing: 6){
                             Text(place.name ?? "")
                                 .font(.title3.bold())
+                                .foregroundColor(.black)
                             
                             Text(place.locality ?? "")
                                 .font(.caption)
