@@ -83,6 +83,7 @@ struct LoginPageUI : View {
                                     .frame(width: 1, height: 18)
                                 
                                 TextField("", text: $loginModel.mobileNo)
+                                    .foregroundColor(.black)
                                     .disabled(loginModel.showOTPField)
                                     .opacity(loginModel.showOTPField ? 0.4 : 1)
                                     .overlay(alignment: .trailing, content: {

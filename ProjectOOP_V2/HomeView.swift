@@ -28,7 +28,7 @@ struct HomeView: View {
         VStack(spacing: 0){
             TabView(selection: $currentTab){
                 // MARK: Need to Apply BG For Each Tab View
-                Text("Home")
+                ExpenseView()
                     .applyBG()
                     .tag(Tab.home)
                 HomeTimer()

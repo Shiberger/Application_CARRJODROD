@@ -11,6 +11,11 @@
 		4BFFCA03D1F533637D0CC943 /* Pods_ProjectOOP_V2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD7CA582840301DAE900C6D /* Pods_ProjectOOP_V2Tests.framework */; };
 		567D2BA565284CE56C7ED80D /* Pods_ProjectOOP_V2_ProjectOOP_V2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88AE7F5B2DCEFC942CC2B37 /* Pods_ProjectOOP_V2_ProjectOOP_V2UITests.framework */; };
 		AB13D0BC2923DDF900C5D5EF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AB13D0BB2923DDF900C5D5EF /* Lottie */; };
+		AB21693F293E3461002987A7 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21693E293E3461002987A7 /* Expense.swift */; };
+		AB216941293E3680002987A7 /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB216940293E3680002987A7 /* ExpenseView.swift */; };
+		AB216943293E3AE7002987A7 /* SpeedMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB216942293E3AE7002987A7 /* SpeedMeter.swift */; };
+		AB216945293E3FAA002987A7 /* IndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB216944293E3FAA002987A7 /* IndicatorShape.swift */; };
+		AB216947293E460A002987A7 /* AnimatedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB216946293E460A002987A7 /* AnimatedText.swift */; };
 		AB29C6702923DA3400F1802C /* ProjectOOP_V2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB29C66F2923DA3400F1802C /* ProjectOOP_V2App.swift */; };
 		AB29C6722923DA3400F1802C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB29C6712923DA3400F1802C /* ContentView.swift */; };
 		AB29C6742923DA3500F1802C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB29C6732923DA3500F1802C /* Assets.xcassets */; };
@@ -20,7 +25,6 @@
 		AB29C68D2923DA3500F1802C /* ProjectOOP_V2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB29C68C2923DA3500F1802C /* ProjectOOP_V2UITestsLaunchTests.swift */; };
 		AB894E7A293C8DF000957C2E /* NewTimerViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB894E79293C8DF000957C2E /* NewTimerViewTest.swift */; };
 		AB894E7E293CAC3600957C2E /* CustomCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB894E7D293CAC3600957C2E /* CustomCamera.swift */; };
-		AB894E80293CBDE600957C2E /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB894E7F293CBDE600957C2E /* CameraModel.swift */; };
 		AB894E84293CBEFF00957C2E /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB894E83293CBEFF00957C2E /* CameraView.swift */; };
 		AB8CDDA1292AEB74003DEECE /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CDDA0292AEB74003DEECE /* SearchView.swift */; };
 		AB8CDDA3292AECD7003DEECE /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CDDA2292AECD7003DEECE /* LocationManager.swift */; };
@@ -64,6 +68,11 @@
 		773D56B4327C83E0B27FC57F /* Pods-ProjectOOP_V2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectOOP_V2Tests.debug.xcconfig"; path = "Target Support Files/Pods-ProjectOOP_V2Tests/Pods-ProjectOOP_V2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		988A3C8ECC7BE15F3AE97FC3 /* Pods-ProjectOOP_V2-ProjectOOP_V2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectOOP_V2-ProjectOOP_V2UITests.release.xcconfig"; path = "Target Support Files/Pods-ProjectOOP_V2-ProjectOOP_V2UITests/Pods-ProjectOOP_V2-ProjectOOP_V2UITests.release.xcconfig"; sourceTree = "<group>"; };
 		A25935DF68D8CBCB86D7504D /* Pods-ProjectOOP_V2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectOOP_V2Tests.release.xcconfig"; path = "Target Support Files/Pods-ProjectOOP_V2Tests/Pods-ProjectOOP_V2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AB21693E293E3461002987A7 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		AB216940293E3680002987A7 /* ExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
+		AB216942293E3AE7002987A7 /* SpeedMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedMeter.swift; sourceTree = "<group>"; };
+		AB216944293E3FAA002987A7 /* IndicatorShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorShape.swift; sourceTree = "<group>"; };
+		AB216946293E460A002987A7 /* AnimatedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedText.swift; sourceTree = "<group>"; };
 		AB29C66C2923DA3400F1802C /* ProjectOOP_V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectOOP_V2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB29C66F2923DA3400F1802C /* ProjectOOP_V2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectOOP_V2App.swift; sourceTree = "<group>"; };
 		AB29C6712923DA3400F1802C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,7 +85,6 @@
 		AB29C68C2923DA3500F1802C /* ProjectOOP_V2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectOOP_V2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AB894E79293C8DF000957C2E /* NewTimerViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerViewTest.swift; sourceTree = "<group>"; };
 		AB894E7D293CAC3600957C2E /* CustomCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCamera.swift; sourceTree = "<group>"; };
-		AB894E7F293CBDE600957C2E /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
 		AB894E83293CBEFF00957C2E /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		AB8CDDA0292AEB74003DEECE /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		AB8CDDA2292AECD7003DEECE /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -237,6 +245,10 @@
 				ABFB4FB1293B68D500C25E34 /* SettingView.swift */,
 				ABFB4FB7293C52EC00C25E34 /* HomeTimer.swift */,
 				AB894E7D293CAC3600957C2E /* CustomCamera.swift */,
+				AB216940293E3680002987A7 /* ExpenseView.swift */,
+				AB216942293E3AE7002987A7 /* SpeedMeter.swift */,
+				AB216944293E3FAA002987A7 /* IndicatorShape.swift */,
+				AB216946293E460A002987A7 /* AnimatedText.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -248,8 +260,8 @@
 				AB8CDDA2292AECD7003DEECE /* LocationManager.swift */,
 				AB8CDDA8292B0E8F003DEECE /* Tab.swift */,
 				ABFB4FB3293C51CC00C25E34 /* PomodoroModel.swift */,
-				AB894E7F293CBDE600957C2E /* CameraModel.swift */,
 				AB894E83293CBEFF00957C2E /* CameraView.swift */,
+				AB21693E293E3461002987A7 /* Expense.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -518,16 +530,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB21693F293E3461002987A7 /* Expense.swift in Sources */,
+				AB216947293E460A002987A7 /* AnimatedText.swift in Sources */,
 				AB8CDDA1292AEB74003DEECE /* SearchView.swift in Sources */,
 				ABFB4FB2293B68D500C25E34 /* SettingView.swift in Sources */,
-				AB894E80293CBDE600957C2E /* CameraModel.swift in Sources */,
 				AB8D9DEA29243AD7001429EF /* AnimatedLoginPage.swift in Sources */,
+				AB216945293E3FAA002987A7 /* IndicatorShape.swift in Sources */,
 				AB8CDDA3292AECD7003DEECE /* LocationManager.swift in Sources */,
 				AB29C6722923DA3400F1802C /* ContentView.swift in Sources */,
 				ABFB4FB4293C51CC00C25E34 /* PomodoroModel.swift in Sources */,
+				AB216943293E3AE7002987A7 /* SpeedMeter.swift in Sources */,
 				ABFB4FB8293C52EC00C25E34 /* HomeTimer.swift in Sources */,
 				AB894E7A293C8DF000957C2E /* NewTimerViewTest.swift in Sources */,
 				AB8CDDA7292B0E76003DEECE /* CustomTabBar.swift in Sources */,
+				AB216941293E3680002987A7 /* ExpenseView.swift in Sources */,
 				AB894E7E293CAC3600957C2E /* CustomCamera.swift in Sources */,
 				AB8D9DE829241017001429EF /* LoginViewModel.swift in Sources */,
 				AB8CDDA9292B0E8F003DEECE /* Tab.swift in Sources */,
