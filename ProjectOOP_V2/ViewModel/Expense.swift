@@ -18,9 +18,9 @@ struct Expense: Identifiable{
 
 var expenses: [Expense] = [
     
-    Expense(icon: "Car", title: "Car Park", subTitle: "Car Park Price", amount: "$200.00"),
-    Expense(icon: "Tax", title: "Tax Chart", subTitle: "Tax Service Charge", amount: "$56.04"),
-    Expense(icon: "Location", title: "Location Park", subTitle: "Location Park Price", amount: "$32.00"),
+    Expense(icon: "Car", title: "Prasarnmit (SWU)", subTitle: "Car Park Prasarnmit", amount: "$224.13"),
+    Expense(icon: "Car", title: "Central RAMA 9", subTitle: "Car Park Central RAMA 9", amount: "$56.04"),
+    Expense(icon: "Car", title: "SAMYAN Mitrtown", subTitle: "Car Park SAMYAN Mitrtown", amount: "49.77"),
 
 ]
 

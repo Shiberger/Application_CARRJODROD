@@ -11,6 +11,7 @@ import GoogleSignIn
 
 struct SettingView: View {
     @AppStorage("log_status") var logStatus: Bool = false
+    @Environment(\.colorScheme) var colorScheme
     // MARK: Hiding Native One
     init(){
         UITabBar.appearance().isHidden = true
@@ -30,7 +31,7 @@ struct SettingView: View {
     @ViewBuilder
     func Home() -> some View{
         NavigationStack{
-            Text("Settings Application")
+            Text(colorScheme == .dark ? "In dark mode" : "In light mode")
                 .navigationTitle("Settings")
                 .toolbar {
                     Button("Logout"){

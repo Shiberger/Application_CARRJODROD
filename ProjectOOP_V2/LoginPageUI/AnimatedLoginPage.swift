@@ -116,8 +116,10 @@ struct LoginPageUI : View {
                                     .frame(width: 1, height: 18)
                                 
                                 TextField("", text: $loginModel.otpCode)
+                                    .foregroundColor(.black)
                                     .disabled(!loginModel.showOTPField)
                                     .opacity(!loginModel.showOTPField ? 0.4 : 1)
+                                
                             }
                             
                             Divider()
